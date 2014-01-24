@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content">
+	<name>plg_content_accordionize</name>
+	<author>Blair D. Patterson</author>
+	<creationDate>September 2012</creationDate>
+	<copyright>Copyright (C) 2012 TenTwentyFour Interactive. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>blair@tentwentyfour.ca</authorEmail>
+	<authorUrl>www.tentwentyfour.ca</authorUrl>
+	<version>1.0</version>
+	<description>PLG_ACCORDIONIZE_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="accordionize">accordionize.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_accordionize.ini</language>
+		<language tag="en-GB">en-GB.plg_content_accordionize.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="heading_level" type="text"	
+					default="h3" 
+					description="PLG_ACCORDIONIZE_FIELD_HEADING_DESC"
+					label="PLG_ACCORDIONIZE_FIELD_HEADING_LABEL">
+				</field>
+				
+				<field name="wrapper_class" type="text"	
+					default="accordionize" 
+					description="PLG_ACCORDIONIZE_FIELD_WRAPPER_DESC"
+					label="PLG_ACCORDIONIZE_FIELD_WRAPPER_LABEL">
+				</field>
+				
+				<field name="content_class" type="text"	
+					default="accordionContent" 
+					description="PLG_ACCORDIONIZE_FIELD_CONTENT_DESC"
+					label="PLG_ACCORDIONIZE_FIELD_CONTENT_LABEL">
+				</field>
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>
